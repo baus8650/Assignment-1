@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		2257BF3127C20327003224BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257BF3027C20327003224BC /* AppDelegate.swift */; };
 		2257BF3327C20327003224BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257BF3227C20327003224BC /* SceneDelegate.swift */; };
-		2257BF3527C20327003224BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257BF3427C20327003224BC /* ViewController.swift */; };
 		2257BF3827C20327003224BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2257BF3627C20327003224BC /* Main.storyboard */; };
 		2257BF3A27C20328003224BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2257BF3927C20328003224BC /* Assets.xcassets */; };
 		2257BF3D27C20328003224BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2257BF3B27C20328003224BC /* LaunchScreen.storyboard */; };
+		2257BF4827C204D3003224BC /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257BF4727C204D3003224BC /* Meditation.swift */; };
+		2257BF4A27C204E6003224BC /* MeditationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257BF4927C204E6003224BC /* MeditationTableViewCell.swift */; };
+		2257BF4C27C2067B003224BC /* MeditationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257BF4B27C2067B003224BC /* MeditationListViewController.swift */; };
+		2257BF4E27C21016003224BC /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257BF4D27C21016003224BC /* MeditationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2257BF2D27C20327003224BC /* Assignment 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2257BF3027C20327003224BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2257BF3227C20327003224BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2257BF3427C20327003224BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2257BF3727C20327003224BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2257BF3927C20328003224BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2257BF3C27C20328003224BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2257BF3E27C20328003224BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2257BF4727C204D3003224BC /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		2257BF4927C204E6003224BC /* MeditationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationTableViewCell.swift; sourceTree = "<group>"; };
+		2257BF4B27C2067B003224BC /* MeditationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationListViewController.swift; sourceTree = "<group>"; };
+		2257BF4D27C21016003224BC /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				2257BF3027C20327003224BC /* AppDelegate.swift */,
 				2257BF3227C20327003224BC /* SceneDelegate.swift */,
-				2257BF3427C20327003224BC /* ViewController.swift */,
-				2257BF3627C20327003224BC /* Main.storyboard */,
-				2257BF3927C20328003224BC /* Assets.xcassets */,
-				2257BF3B27C20328003224BC /* LaunchScreen.storyboard */,
+				2257BF4627C204BA003224BC /* Models */,
+				2257BF4527C204B5003224BC /* Views */,
+				2257BF4427C204AD003224BC /* Controllers */,
 				2257BF3E27C20328003224BC /* Info.plist */,
+				2257BF3927C20328003224BC /* Assets.xcassets */,
 			);
 			path = "Assignment 1";
+			sourceTree = "<group>";
+		};
+		2257BF4427C204AD003224BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2257BF4B27C2067B003224BC /* MeditationListViewController.swift */,
+				2257BF4D27C21016003224BC /* MeditationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2257BF4527C204B5003224BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2257BF4927C204E6003224BC /* MeditationTableViewCell.swift */,
+				2257BF3627C20327003224BC /* Main.storyboard */,
+				2257BF3B27C20328003224BC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2257BF4627C204BA003224BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2257BF4727C204D3003224BC /* Meditation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2257BF3527C20327003224BC /* ViewController.swift in Sources */,
+				2257BF4827C204D3003224BC /* Meditation.swift in Sources */,
+				2257BF4A27C204E6003224BC /* MeditationTableViewCell.swift in Sources */,
+				2257BF4C27C2067B003224BC /* MeditationListViewController.swift in Sources */,
 				2257BF3127C20327003224BC /* AppDelegate.swift in Sources */,
+				2257BF4E27C21016003224BC /* MeditationViewController.swift in Sources */,
 				2257BF3327C20327003224BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -48,7 +48,6 @@ class MeditationListViewController: UIViewController {
             let destinationVC = segue.destination as! MeditationViewController
             let row = (sender as! NSIndexPath).row; //we know that sender is an NSIndexPath here.
             let meditation = meditationList[row]
-            print("MEDITATION \(meditation)")
             destinationVC.title = meditation.name
             destinationVC.image = meditation.image
             destinationVC.instructions = meditation.instructions

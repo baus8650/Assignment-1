@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 struct Meditation {
+    
     var name: String?
     var image: UIImage?
     var instructions: String?
-    
     
 }
 

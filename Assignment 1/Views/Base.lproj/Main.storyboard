@@ -117,7 +117,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gXU-P7-lzM">
                                 <rect key="frame" x="20" y="213" width="374" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -137,13 +137,14 @@
                             <constraint firstItem="gXU-P7-lzM" firstAttribute="bottom" secondItem="FGR-Gg-utm" secondAttribute="bottom" id="QDh-Hl-JrV"/>
                             <constraint firstItem="gXU-P7-lzM" firstAttribute="top" secondItem="poQ-nD-EMl" secondAttribute="bottom" constant="5" id="hRD-JI-m0Z"/>
                             <constraint firstItem="gXU-P7-lzM" firstAttribute="top" secondItem="FGR-Gg-utm" secondAttribute="top" constant="125" id="muZ-Ec-VTP"/>
+                            <constraint firstItem="FGR-Gg-utm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="poQ-nD-EMl" secondAttribute="trailing" symbolic="YES" id="vVz-1Q-2U3"/>
                             <constraint firstItem="poQ-nD-EMl" firstAttribute="leading" secondItem="FGR-Gg-utm" secondAttribute="leading" constant="20" id="wBh-hF-fX8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="B8o-7H-uw5"/>
                     <connections>
-                        <outlet property="instructionText" destination="gXU-P7-lzM" id="TvD-VT-Kop"/>
                         <outlet property="instructionsLabel" destination="poQ-nD-EMl" id="A8Z-4S-Zqb"/>
+                        <outlet property="instructionsText" destination="gXU-P7-lzM" id="TvD-VT-Kop"/>
                         <outlet property="meditationImage" destination="b83-fI-0Qp" id="13J-9F-CfZ"/>
                     </connections>
                 </viewController>

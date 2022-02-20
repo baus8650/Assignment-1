@@ -9,18 +9,23 @@ import UIKit
 
 class MeditationViewController: UIViewController {
 
+    // MARK: - Properties
     var image: UIImage?
     var instructions: String?
 
+    // MARK: - IBOutlets
     @IBOutlet var instructionsLabel: UILabel!
-    @IBOutlet var instructionText: UITextView!
+    @IBOutlet var instructionsText: UITextView!
     @IBOutlet var meditationImage: UIImageView!
     
+    // MARK: - LifeCycle Methods
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
-        instructionText.text = instructions
+        instructionsText.text = instructions
         meditationImage.image = image
+        
     }
 
 }

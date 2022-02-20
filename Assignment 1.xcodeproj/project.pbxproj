@@ -62,15 +62,13 @@
 		2257BF2F27C20327003224BC /* Assignment 1 */ = {
 			isa = PBXGroup;
 			children = (
-				2257BF4627C204BA003224BC /* Models */,
-				2257BF4527C204B5003224BC /* Views */,
 				2257BF3027C20327003224BC /* AppDelegate.swift */,
 				2257BF3227C20327003224BC /* SceneDelegate.swift */,
+				2257BF4627C204BA003224BC /* Models */,
+				2257BF4527C204B5003224BC /* Views */,
 				2257BF4427C204AD003224BC /* Controllers */,
-				2257BF3627C20327003224BC /* Main.storyboard */,
-				2257BF3927C20328003224BC /* Assets.xcassets */,
-				2257BF3B27C20328003224BC /* LaunchScreen.storyboard */,
 				2257BF3E27C20328003224BC /* Info.plist */,
+				2257BF3927C20328003224BC /* Assets.xcassets */,
 			);
 			path = "Assignment 1";
 			sourceTree = "<group>";
@@ -88,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				2257BF4927C204E6003224BC /* MeditationTableViewCell.swift */,
+				2257BF3627C20327003224BC /* Main.storyboard */,
+				2257BF3B27C20328003224BC /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";

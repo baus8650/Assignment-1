@@ -1,24 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TDf-GL-53H">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Meditation List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MeditationListViewController" customModule="Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing" translatesAutoresizingMaskIntoConstraints="NO" id="1gK-Um-ZhT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="190" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="09a-b9-zvP">
+                                <rect key="frame" x="0.0" y="496" width="414" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="hWR-UM-nR0"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MeditationTableViewCell" rowHeight="200" id="zEZ-Qh-fnp" customClass="MeditationTableViewCell" customModule="Assignment_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zEZ-Qh-fnp" id="9Zw-pE-A81">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditation-0" translatesAutoresizingMaskIntoConstraints="NO" id="UG4-eC-sAl">
+                                                    <rect key="frame" x="10" y="5" width="394" height="190"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhx-Kx-QEQ">
+                                                    <rect key="frame" x="28" y="19" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qhx-Kx-QEQ" firstAttribute="leading" secondItem="9Zw-pE-A81" secondAttribute="leadingMargin" constant="8" id="4fe-kD-nRp"/>
+                                                <constraint firstAttribute="bottom" secondItem="UG4-eC-sAl" secondAttribute="bottom" constant="5" id="6jF-9m-fKf"/>
+                                                <constraint firstItem="UG4-eC-sAl" firstAttribute="leading" secondItem="9Zw-pE-A81" secondAttribute="leading" constant="10" id="EQl-f4-24E"/>
+                                                <constraint firstItem="UG4-eC-sAl" firstAttribute="top" secondItem="9Zw-pE-A81" secondAttribute="top" constant="5" id="mZl-aW-WE1"/>
+                                                <constraint firstAttribute="trailing" secondItem="UG4-eC-sAl" secondAttribute="trailing" constant="10" id="vIh-pn-gxm"/>
+                                                <constraint firstItem="qhx-Kx-QEQ" firstAttribute="top" secondItem="9Zw-pE-A81" secondAttribute="topMargin" constant="8" id="wWS-Yx-voD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="meditationImage" destination="UG4-eC-sAl" id="gf2-Sh-4fG"/>
+                                            <outlet property="meditationTitle" destination="qhx-Kx-QEQ" id="2tQ-QR-mRe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's begin..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmE-ao-V0g">
+                                <rect key="frame" x="10" y="457" width="131" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdP-wu-3zz">
+                                <rect key="frame" x="10" y="405" width="156" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mdP-wu-3zz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="6wT-fq-Ppw"/>
+                            <constraint firstItem="1gK-Um-ZhT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8pm-kT-pN9"/>
+                            <constraint firstAttribute="bottom" secondItem="09a-b9-zvP" secondAttribute="bottom" id="95g-Ls-Ptb"/>
+                            <constraint firstItem="09a-b9-zvP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lvk-gK-yft"/>
+                            <constraint firstItem="09a-b9-zvP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fos-vg-lt6"/>
+                            <constraint firstItem="1gK-Um-ZhT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iPw-4u-x3U"/>
+                            <constraint firstItem="vmE-ao-V0g" firstAttribute="top" secondItem="mdP-wu-3zz" secondAttribute="bottom" constant="5" id="jL0-a7-PYd"/>
+                            <constraint firstItem="09a-b9-zvP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nlu-Yq-3Cg"/>
+                            <constraint firstItem="1gK-Um-ZhT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oin-wN-yVu"/>
+                            <constraint firstItem="1gK-Um-ZhT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qDS-an-oPX"/>
+                            <constraint firstItem="vmE-ao-V0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sgv-VP-j1c"/>
+                            <constraint firstItem="09a-b9-zvP" firstAttribute="top" secondItem="vmE-ao-V0g" secondAttribute="bottom" constant="10" id="uAk-Yr-gfQ"/>
+                            <constraint firstAttribute="bottom" secondItem="1gK-Um-ZhT" secondAttribute="bottom" id="vJK-7d-oqN"/>
+                            <constraint firstItem="1gK-Um-ZhT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yan-cn-gzM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dEQ-Sd-Fbm"/>
+                    <connections>
+                        <outlet property="meditationTable" destination="09a-b9-zvP" id="GgY-NE-lgt"/>
+                        <segue destination="COc-NM-Lk2" kind="show" identifier="ListToMeditation" id="FJY-Cx-l1v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="838" y="98"/>
+        </scene>
+        <!--Meditation View Controller-->
+        <scene sceneID="7UZ-G6-DWD">
+            <objects>
+                <viewController id="COc-NM-Lk2" customClass="MeditationViewController" customModule="Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hhw-Ni-5In">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b83-fI-0Qp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gXU-P7-lzM">
+                                <rect key="frame" x="20" y="213" width="374" height="649"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poQ-nD-EMl">
+                                <rect key="frame" x="20" y="180" width="116.5" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FGR-Gg-utm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gXU-P7-lzM" firstAttribute="leading" secondItem="FGR-Gg-utm" secondAttribute="leading" constant="20" id="6bO-hg-tMn"/>
+                            <constraint firstItem="FGR-Gg-utm" firstAttribute="trailing" secondItem="gXU-P7-lzM" secondAttribute="trailing" constant="20" id="Aib-MU-BnG"/>
+                            <constraint firstItem="gXU-P7-lzM" firstAttribute="bottom" secondItem="FGR-Gg-utm" secondAttribute="bottom" id="QDh-Hl-JrV"/>
+                            <constraint firstItem="gXU-P7-lzM" firstAttribute="top" secondItem="poQ-nD-EMl" secondAttribute="bottom" constant="5" id="hRD-JI-m0Z"/>
+                            <constraint firstItem="gXU-P7-lzM" firstAttribute="top" secondItem="FGR-Gg-utm" secondAttribute="top" constant="125" id="muZ-Ec-VTP"/>
+                            <constraint firstItem="poQ-nD-EMl" firstAttribute="leading" secondItem="FGR-Gg-utm" secondAttribute="leading" constant="20" id="wBh-hF-fX8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="B8o-7H-uw5"/>
+                    <connections>
+                        <outlet property="instructionText" destination="gXU-P7-lzM" id="TvD-VT-Kop"/>
+                        <outlet property="instructionsLabel" destination="poQ-nD-EMl" id="A8Z-4S-Zqb"/>
+                        <outlet property="meditationImage" destination="b83-fI-0Qp" id="13J-9F-CfZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNT-P8-Xi2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657.9710144927537" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JnW-mh-ouu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TDf-GL-53H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Wc-JA-89Z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qh8-nJ-0yG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4q-fO-BqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="landing" width="1333.5" height="2000"/>
+        <image name="meditation-0" width="1232" height="816"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
